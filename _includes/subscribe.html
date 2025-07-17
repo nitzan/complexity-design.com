@@ -1,12 +1,17 @@
 <form
-  action="https://buttondown.com/api/emails/embed-subscribe/byedit"
-  method="post"
-  target="popupwindow"
-  onsubmit="window.open('https://buttondown.com/byedit', 'popupwindow')"
-  class="embeddable-buttondown-form subscribe-form"
+    action="https://buttondown.com/api/emails/embed-subscribe/byedit"
+    method="post"
+    target="popupwindow"
+    onsubmit="window.open('https://buttondown.com/byedit', 'popupwindow')"
+    class="subscribe-form"
+    autocomplete="off"
 >
-  <label for="bd-email">Subscribe for updates</label>
-  <input type="email" name="email" id="bd-email" placeholder="Enter your email" required />
-  <input type="submit" value="Subscribe" />
-  <input type="hidden" name="tag" value="complexity-design" />
+
+    <div class="subscribe-fields">
+        <input type="email" name="email" id="bd-email" placeholder="Subscribe for Weekly posts" required />
+        <button type="submit" id="submit-button" style="display:none;">Subscribe</button>
+    </div>
+    
+    <div class="form-message" style="display:none;"></div>
 </form>
+

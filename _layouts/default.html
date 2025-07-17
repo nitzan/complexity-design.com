@@ -5,12 +5,12 @@
     <div class="wrapper">
       <header class="site-header">
         <h1 class="site-title">{{ site.title }}</h1>
-        <p class="site-description">{{ site.description }}</p>
-        <nav class="site-nav">
+        <!-- <p class="site-description">{{ site.description }}</p> -->
+        <!-- <nav class="site-nav"> -->
           <!-- <a class="site-nav-item" href="/">Home</a>
           <a class="site-nav-item" href="/about/">About</a> -->
           <!-- Add more navigation links as needed -->
-        </nav>
+        <!-- </nav> -->
       </header>
       <main class="site-content container">
         {% if site.posts.size > 0 %}
@@ -18,9 +18,9 @@
             {% for post in site.posts %}
               <li class="post-list-item">
                 <!-- <a href="{{ post.url }}" class="post-list-title">{{ post.title }}</a> -->
-                  <h2>{{ post.title }}</h2>
-                <!-- <span class="post-list-date">{{ post.date | date: "%B %d, %Y" }}</span> -->
-                <p class="post-list-excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
+                  <h2 class="post-title">{{ post.title }} <span class="post-list-date">{{ post.date | date: "%B %d, %Y" }}</span></h2>
+                
+                <p class="post-list-content">{{ post.content }}</p>
               </li>
             {% endfor %}
           </ul>
