@@ -1,0 +1,340 @@
+/*
+ *  __                  __
+ * /\ \                /\ \
+ * \ \ \___   __  __   \_\ \     __
+ *  \ \  _ `\/\ \/\ \  /'_` \  /'__`\
+ *   \ \ \ \ \ \ \_\ \/\ \_\ \/\  __/
+ *    \ \_\ \_\/`____ \ \___,_\ \____\
+ *     \/_/\/_/`/___/> \/__,_ /\/____/
+ *                /\___/
+ *                \/__/
+ *
+ * Designed, built, and released under MIT license by @mdo. Learn more at
+ * https://github.com/poole/hyde.
+ */
+
+
+/*
+ * Contents
+ *
+ * Global resets
+ * Header, nav, content, footer, and subscribe form
+ * Themes
+ */
+
+
+/*
+ * Global resets
+ *
+ * Update the foundational and global aspects of the page.
+ */
+
+html {
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+}
+@media (min-width: 48em) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (min-width: 58em) {
+  html {
+    font-size: 20px;
+  }
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/*
+ * Header, nav, content, footer, and subscribe form
+ *
+ * One-column layout styles for the header, navigation, content area, footer,
+ * and subscribe form.
+ */
+
+.site-header {
+  text-align: center;
+  padding: 2em 0 1em 0;
+}
+.site-title {
+  font-size: 2.2em;
+  margin: 0 0 0.2em 0;
+  font-family: "Atlas Grotesk", Arial, sans-serif;
+  font-weight: 700;
+}
+.site-description {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 1em;
+  font-family: "Atlas Grotesk", Arial, sans-serif;
+}
+.site-nav {
+  margin-bottom: 1em;
+}
+.site-nav-item {
+  display: inline-block;
+  margin: 0 1em;
+  color: #222;
+  text-decoration: none;
+  font-family: "Atlas Grotesk", Arial, sans-serif;
+  font-weight: 700;
+}
+.site-nav-item:hover {
+  text-decoration: underline;
+}
+.site-content {
+  max-width: 700px;
+  margin: 0;
+  padding: 0 1em;
+  flex: 1 0 auto;
+}
+.site-content.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1em;
+  flex: 1 0 auto;
+  box-sizing: border-box;
+}
+@media (max-width: 1100px) {
+  .site-content.container {
+    max-width: 98vw;
+    padding: 0 0.5em;
+  }
+}
+@media (max-width: 700px) {
+  .site-content.container {
+    max-width: 100vw;
+    padding: 0 0.2em;
+  }
+  .post-list-title, h2 {
+    font-size: 1.1em;
+  }
+}
+.site-footer {
+  flex-shrink: 0;
+  text-align: center;
+  padding: 2em 0 2em 0;
+  background: #fafafa;
+}
+.subscribe-form {
+  margin: 0 auto;
+  max-width: 350px;
+}
+.subscribe-form label {
+  display: block;
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  font-family: "Atlas Grotesk", Arial, sans-serif;
+  font-weight: 700;
+}
+.subscribe-form input[type="email"] {
+  width: 100%;
+  padding: 0.4em 0.6em;
+  margin-bottom: 0.7em;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-family: "Atlas Grotesk", Arial, sans-serif;
+  font-size: 1em;
+}
+.subscribe-form input[type="submit"] {
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 0.4em 1.2em;
+  font-family: "Atlas Grotesk", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.subscribe-form input[type="submit"]:hover {
+  background: #444;
+}
+
+
+/*
+ * Themes
+ *
+ * As of v1.1, Hyde includes optional themes to color the sidebar and links
+ * within blog posts. To use, add the class of your choosing to the `body`.
+ */
+
+/* Base16 (http://chriskempson.github.io/base16/#default) */
+
+/* Red */
+.theme-base-08 .sidebar {
+  background-color: #ac4142;
+}
+.theme-base-08 .content a,
+.theme-base-08 .related-posts li a:hover {
+  color: #ac4142;
+}
+
+/* Orange */
+.theme-base-09 .sidebar {
+  background-color: #d28445;
+}
+.theme-base-09 .content a,
+.theme-base-09 .related-posts li a:hover {
+  color: #d28445;
+}
+
+/* Yellow */
+.theme-base-0a .sidebar {
+  background-color: #f4bf75;
+}
+.theme-base-0a .content a,
+.theme-base-0a .related-posts li a:hover {
+  color: #f4bf75;
+}
+
+/* Green */
+.theme-base-0b .sidebar {
+  background-color: #90a959;
+}
+.theme-base-0b .content a,
+.theme-base-0b .related-posts li a:hover {
+  color: #90a959;
+}
+
+/* Cyan */
+.theme-base-0c .sidebar {
+  background-color: #75b5aa;
+}
+.theme-base-0c .content a,
+.theme-base-0c .related-posts li a:hover {
+  color: #75b5aa;
+}
+
+/* Blue */
+.theme-base-0d .sidebar {
+  background-color: #6a9fb5;
+}
+.theme-base-0d .content a,
+.theme-base-0d .related-posts li a:hover {
+  color: #6a9fb5;
+}
+
+/* Magenta */
+.theme-base-0e .sidebar {
+  background-color: #aa759f;
+}
+.theme-base-0e .content a,
+.theme-base-0e .related-posts li a:hover {
+  color: #aa759f;
+}
+
+/* Brown */
+.theme-base-0f .sidebar {
+  background-color: #8f5536;
+}
+.theme-base-0f .content a,
+.theme-base-0f .related-posts li a:hover {
+  color: #8f5536;
+}
+
+body, .sidebar, .content, .post-title, .post-date, .page-content {
+  font-family: "Atlas Grotesk", Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .post-title {
+  font-family: "Atlas Grotesk", Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+em, i {
+  font-family: "Atlas Grotesk", Arial, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+body, .sidebar, .content, .page-content {
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Buttondown form styles */
+.sidebar-form {
+  margin-top: 2em;
+  padding: 1em 0 0 0;
+  border-top: 1px solid #eee;
+}
+.embeddable-buttondown-form label {
+  display: block;
+  font-size: 0.95em;
+  margin-bottom: 0.5em;
+  font-family: "Atlas Grotesk", Arial, sans-serif;
+  font-weight: 700;
+}
+.embeddable-buttondown-form input[type="email"] {
+  width: 100%;
+  padding: 0.4em 0.6em;
+  margin-bottom: 0.7em;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-family: "Atlas Grotesk", Arial, sans-serif;
+  font-size: 1em;
+}
+.embeddable-buttondown-form input[type="submit"] {
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 0.4em 1.2em;
+  font-family: "Atlas Grotesk", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.embeddable-buttondown-form input[type="submit"]:hover {
+  background: #444;
+}
+.embeddable-buttondown-form p,
+.embeddable-buttondown-form a {
+  display: none !important;
+}
+.post-list {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.post-list-item {
+  margin-bottom: 2em;
+  padding-bottom: 1.5em;
+}
+.post-list-title {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #222;
+  text-decoration: none;
+  font-family: "Atlas Grotesk", Arial, sans-serif;
+}
+.post-list-title:hover {
+  text-decoration: underline;
+}
+.post-list-date {
+  display: block;
+  color: #888;
+  font-size: 0.95em;
+  margin-bottom: 0.5em;
+}
+.post-list-excerpt {
+  color: #444;
+  font-size: 1em;
+  margin: 0;
+}
+
