@@ -22,7 +22,7 @@ title: Complexity Design
 email: hermonn@newschool.edu
 description: >- # this means to ignore newlines until "baseurl:"
   Complexity design is a space for learning about learning
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/complexity-design.com" # the subpath of your site, e.g. /blog
 url: "https://nitzan.github.io" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
