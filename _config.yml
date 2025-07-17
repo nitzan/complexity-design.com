@@ -23,7 +23,7 @@ email: hermonn@newschool.edu
 description: >- # this means to ignore newlines until "baseurl:"
   Complexity design is a space for learning about learning
 baseurl: "" # for custom domain, leave empty
-url: "https://complexity-design.com" # custom domain
+url: "complexity-design.com" # custom domain
 plugins:
   - jekyll-feed
 
